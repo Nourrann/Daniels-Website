@@ -1,0 +1,791 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #343434;
+}
+.container {
+  padding-inline: 60px;
+}
+@media (max-width: 992px) {
+  .container {
+    padding-inline: 0px;
+  }
+}
+p {
+  margin-top: 20px;
+  color: #748182;
+  line-height: 1.6;
+}
+
+/** Start Home Style **/
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(../imgs/bg.jpg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.home .content {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.home .content .tableCellContent {
+  display: table-cell;
+  vertical-align: middle;
+}
+.home .content .tableCellContent .headingText {
+  font-size: calc(1.5rem + 2vw);
+  color: white;
+}
+.home .content .tableCellContent .beforeAnimation {
+  font-size: calc(2rem + 2vw);
+  font-weight: 300;
+  color: white;
+}
+.home .content .tableCellContent .animatedText {
+  position: relative;
+}
+.home .content .tableCellContent .animatedText::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.575);
+}
+.home .content .tableCellContent .animatedText .afterAnimation::after {
+  content: "";
+  animation: typing 11s infinite;
+  font-size: calc(2rem + 2vw);
+  font-weight: 400;
+  color: white;
+}
+@keyframes typing {
+  0% {
+    content: "L";
+  }
+  1% {
+    content: "La";
+  }
+  3% {
+    content: "Lar";
+  }
+  5% {
+    content: "Larr";
+  }
+  7% {
+    content: "Larry";
+  }
+  8% {
+    content: "Larry";
+  }
+  10% {
+    content: "Larry D";
+  }
+  11% {
+    content: "Larry Da";
+  }
+  13% {
+    content: "Larry Dan";
+  }
+  14% {
+    content: "Larry Dani";
+  }
+  16% {
+    content: "Larry Danie";
+  }
+  17% {
+    content: "Larry Daniel";
+  }
+  19% {
+    content: "Larry Daniels";
+  }
+  20% {
+    content: "Larry Daniel";
+  }
+  21% {
+    content: "Larry Danie";
+  }
+  22% {
+    content: "Larry Dani";
+  }
+  23% {
+    content: "Larry Dan";
+  }
+  24% {
+    content: "Larry Da";
+  }
+  25% {
+    content: "Larry D";
+  }
+  26% {
+    content: "Larry ";
+  }
+  27% {
+    content: "Larry";
+  }
+  28% {
+    content: "Larr";
+  }
+  30% {
+    content: "Lar";
+  }
+  32% {
+    content: "La";
+  }
+  34% {
+    content: "L";
+  }
+  35% {
+    content: "";
+  }
+  36% {
+    content: "D";
+  }
+  38% {
+    content: "De";
+  }
+  40% {
+    content: "Dev";
+  }
+  42% {
+    content: "Dev";
+  }
+  44% {
+    content: "Deve";
+  }
+  46% {
+    content: "Devel";
+  }
+  48% {
+    content: "Develo";
+  }
+  50% {
+    content: "Develop";
+  }
+  52% {
+    content: "Develope";
+  }
+  54% {
+    content: "Developer";
+  }
+  56% {
+    content: "Develope";
+  }
+  58% {
+    content: "Develop";
+  }
+  60% {
+    content: "Develo";
+  }
+  62% {
+    content: "Devel";
+  }
+  64% {
+    content: "Deve";
+  }
+  66% {
+    content: "Dev";
+  }
+  68% {
+    content: "De";
+  }
+  70% {
+    content: "Des";
+  }
+  72% {
+    content: "Des";
+  }
+  74% {
+    content: "Desi";
+  }
+  76% {
+    content: "Desig";
+  }
+  78% {
+    content: "Design";
+  }
+  80% {
+    content: "Designe";
+  }
+  82% {
+    content: "Designer";
+  }
+  84% {
+    content: "Designe";
+  }
+  86% {
+    content: "Design";
+  }
+  88% {
+    content: "Desig";
+  }
+  90% {
+    content: "Desi";
+  }
+  92% {
+    content: "Des";
+  }
+  94% {
+    content: "De";
+  }
+  96% {
+    content: "D";
+  }
+  98% {
+    content: "";
+  }
+}
+.home .content {
+  text-align: center;
+}
+
+.home .content .tableCellContent .icons li {
+  display: inline-block;
+  margin-inline: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  /* text-align: center; */
+}
+.home .content .tableCellContent .icons li a {
+  color: white;
+}
+/** End Home Style **/
+
+/*& Start NavBar Style &*/
+.navBar nav {
+  background-color: #1c1c1c8b;
+  z-index: 1000;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+.navBar .navbarEdits {
+  padding-block: 15px;
+}
+.navBar .navbarEdits .nav-item a,
+.navBar .navbarEdits .logo {
+  color: white;
+  position: relative;
+}
+.navBar .navbarEdits .nav-item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  background-color: white;
+  width: 0;
+  transition: width 0.3s;
+}
+
+.navBar .navbarEdits .nav-item .active {
+  transition: 0.4s all;
+}
+.navBar .navbarEdits .nav-item .active::after {
+  width: 100%;
+}
+
+.navBar .navbarEdits .logo {
+  font-family: "Montserrat", sans-serif;
+}
+.navBar .navbarEdits .nav-item {
+  font-size: 1rem;
+  font-weight: 400;
+  /* margin-right: 1.5rem; */
+}
+/*& End NavBar Style &*/
+
+/*^ Start About Style ^*/
+.about {
+  padding-block: 100px;
+  overflow: hidden;
+}
+.about .aboutHeading {
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.about .jobDisc {
+  color: #999;
+}
+
+.about .content .progress {
+  width: 100%;
+  height: 26px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  position: relative;
+  border-radius: 5px;
+}
+.about .content .progress h5 {
+  color: white;
+  transform: translateY(30%);
+  font-size: 13px;
+  margin-inline: 10px;
+  z-index: 10;
+}
+.about .content .progress span {
+  position: absolute;
+  background-color: #1c1c1c;
+  color: white;
+  top: 0;
+  left: 0;
+  height: 26px;
+  border-radius: 5px;
+}
+.about .content .skill {
+  margin-block: 30px;
+}
+.progressContent {
+  color: white;
+  z-index: 10;
+}
+.about .content .btn-group {
+  margin-top: 20px;
+}
+.btnn {
+  margin-right: 4px;
+  padding: 8px 26px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  border: #1c1c1c 1px solid;
+  background-color: white;
+}
+.about .content .btn-group .btnn.btn1 {
+  background-color: #1c1c1c;
+  color: white;
+  transition: 0.4s all;
+}
+.about .content .btn-group .btnn.btn1:hover {
+  color: #1c1c1c;
+  background-color: white;
+}
+.about .content .btn-group .btnn.btn2 {
+  color: #1c1c1c;
+  background-color: white;
+  transition: 0.4s all;
+}
+.about .content .btn-group .btnn.btn2:hover {
+  background-color: #1c1c1c;
+  color: white;
+}
+.about .image {
+  position: relative;
+  padding-left: 30px;
+}
+.about .image::after {
+  content: "";
+  background-image: url(../imgs/dots.png);
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  z-index: -10;
+}
+.about .image img {
+  width: 100%;
+}
+/*^ End About Style ^*/
+
+/*& Start Services Style &*/
+.services {
+  padding-block: 100px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.heading {
+  margin: auto;
+  text-align: center;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 5;
+  width: fit-content;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  bottom: -10px;
+  left: 0;
+  z-index: -10;
+  height: 20px;
+  width: 100%;
+}
+.services .service {
+  background-color: white;
+  padding: 50px 20px;
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+.services .service span {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  font-size: 25px;
+  line-height: 70px;
+  transition: 0.4s all;
+}
+.services .service:hover span {
+  color: white;
+  background-color: #1c1c1c;
+}
+.services .service h3 {
+  font-size: 19px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+.services .service p {
+  font-size: 14px;
+  word-spacing: 2px;
+}
+/*& End Services Style &*/
+
+/** Start Portfolio Section **/
+.portfolio {
+  padding-block: 100px;
+}
+.portfolio .portfolioLinks .nav {
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.portfolio .portfolioLinks .nav-tabs {
+  border: none;
+  --bs-nav-tabs-border-width: 0;
+  --bs-nav-tabs-border-color: 0;
+  --bs-nav-tabs-border-radius: 0;
+  --bs-nav-tabs-link-hover-border-color: 0;
+  --bs-nav-tabs-link-active-color: 0;
+  --bs-nav-tabs-link-active-bg: 0;
+  --bs-nav-tabs-link-active-border-color: 0;
+}
+
+.portfolio .portfolioLinks .nav .nav-link {
+  color: #1c1c1c;
+  font-weight: 700;
+  position: relative;
+}
+.portfolio .portfolioLinks .nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #1c1c1c;
+  transition: 0.4s all;
+  left: 0;
+  transform: translateX(30%);
+  bottom: 0;
+}
+
+.portfolio .portfolioLinks .nav .active::after {
+  width: 60%;
+}
+.portfolio .image img {
+  width: 100%;
+}
+.portfolio .image {
+  position: relative;
+}
+.portfolio .image .overlay {
+  position: absolute;
+
+  inset: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  transition: 0.6s all;
+  transform: translateY(10px);
+}
+.portfolio .image .overlay:hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio .image .overlay .overlayContent {
+  text-align: center;
+  margin-top: 35%;
+}
+.portfolio .image .overlay h3 {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  transform: translateY(-15px);
+  transition: all 0.6s;
+}
+.portfolio .image .overlay:hover h3 {
+  transform: translateY(0);
+}
+.portfolio .image .overlay .overlayContent .portfolioList {
+  list-style: none;
+  padding-left: 0;
+}
+.portfolio .image .overlay .overlayContent .portfolioList li {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-size: 15px;
+  line-height: 35px;
+  border-radius: 50%;
+  background-color: #1c1c1c;
+  border: #1c1c1c 1px solid;
+  transition: 0.4s all;
+}
+.portfolio .image .overlay .overlayContent .portfolioList li:hover {
+  background-color: transparent;
+}
+.portfolio .image .overlay .overlayContent .portfolioList li:hover a {
+  color: #1c1c1c;
+}
+.portfolio .image .overlay .overlayContent .portfolioList li a {
+  color: white;
+}
+
+/** End Portfolio Section **/
+
+/*^ Start Testimonial Style ^*/
+.testimonial {
+  padding-block: 100px;
+  background-color: #f7f7f7;
+}
+
+.testimonial {
+  padding-inline: 130px;
+}
+.testimonial .carouselPerson {
+  margin-bottom: 70px;
+}
+.testimonial .carouselPerson img {
+  width: 100px;
+}
+.testimonial .carouselPerson .carouselContent h6 {
+  margin-top: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.testimonial .carouselPerson .carouselContent p {
+  font-size: 15px;
+}
+.testimonial .carouselPerson .carouselContent span {
+  font-size: 12px;
+  display: inline-block;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  /* color: black; */
+  background-color: #d6d6d6;
+  margin-right: 10px;
+}
+.carousel-indicators .active {
+  background-color: #869791;
+}
+.carousel-indicators button:hover {
+  background-color: #869791;
+}
+
+/*^ End Testimonial Style ^*/
+
+/*& Start Numbers Style &*/
+.numbers {
+  padding-block: 100px;
+  text-align: center;
+}
+.numbers .icon {
+  font-size: 30px;
+}
+.numbers h5 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-block: 15px;
+}
+.numbers p {
+  font-weight: 600;
+  margin-top: 0;
+}
+/*& End Numbers Style &*/
+
+/** Start Team Style **/
+.team {
+  padding-block: 100px;
+  background-color: #f7f7f7;
+}
+.team .image img {
+  width: 100%;
+}
+.team .teamCard {
+  overflow: hidden;
+  background-color: rgba(52, 52, 52, 0.8);
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: center;
+}
+
+.team .teamCard .content {
+  padding: 25px;
+}
+.team .teamCard h2 {
+  font-weight: 500;
+  font-size: 26px;
+}
+.team .teamCard h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.team .teamCard .image {
+  overflow: hidden;
+  position: relative;
+}
+.team .teamCard .image .imageShadow {
+  background-color: rgba(255, 255, 255, 0.95);
+  inset: 5px;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  transition: all 0.6s;
+}
+.team .teamCard:hover .imageShadow {
+  opacity: 1;
+  transform: rotateY(360deg) scale(1, 1);
+}
+.team .teamCard .image .imageShadow .socialLinks {
+  list-style: none;
+  text-align: center;
+  margin-top: 50%;
+}
+.team .teamCard .image .imageShadow .socialLinks li {
+  display: inline-block;
+  margin-inline: 10px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #1c1c1c;
+}
+.team .teamCard .image .imageShadow .socialLinks li a {
+  color: white;
+}
+.team .teamCard .image img {
+  transition: 0.6s all;
+}
+.team .teamCard .image:hover img {
+  transform: scale(1.2);
+}
+/** End Team Style **/
+
+/*^ Start Contact Style ^*/
+.contact {
+  padding-block: 100px;
+  /* text-align: center; */
+}
+.contact .content h5 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-block: 15px;
+}
+.contact .content p {
+  margin: 0;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+.contact .content .icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  font-size: 25px;
+  line-height: 60px;
+  transition: 0.4s all;
+}
+.contact .content:hover .icon {
+  color: white;
+  background-color: #1c1c1c;
+}
+.contact form {
+  margin-top: 75px;
+}
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  border: 0;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+.contact form input:focus,
+.contact form textarea:focus {
+  outline: none;
+}
+.contact form textarea {
+  resize: none;
+}
+.btnn.submitBtn {
+  margin-right: 4px;
+  padding: 8px 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  border: #1c1c1c 1px solid;
+  background-color: #1c1c1c;
+  color: white;
+  transition: 0.4s all;
+}
+.submitBtn:hover {
+  color: #1c1c1c;
+  background-color: white;
+}
+/*^ End Contact Style ^*/
+
+/*& Start Footer Style &*/
+.footer {
+  padding-block: 10px;
+  background-color: #1c1c1c;
+}
+.footer p {
+  font-size: 14px;
+}
+/*& End Footer Style &*/
+
+.navbar-toggler {
+  border: none;
+  border-radius: 0;
+  color: transparent;
+}
+.navbar-toggler span {
+  color: white;
+  font-size: 20px;
+}
+@media screen and (max-width: 992px) {
+  .navBar .navbarEdits .nav-item .active::after {
+    width: 25%;
+  }
+}
